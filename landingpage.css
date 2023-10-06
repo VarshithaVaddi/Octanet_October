@@ -1,0 +1,871 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background:linear-gradient(rgb(32, 136, 161),rgb(78, 182, 213),rgb(137, 206, 230));
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+    background:linear-gradient(rgb(32, 136, 161),rgb(78, 182, 213),rgb(137, 206, 230));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+}
+.search {
+    margin-right: 20px; /* Add some spacing from the navigation links */
+}
+.search-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the search button using a class selector */
+.search-button {
+    padding: 10px 20px;
+    background-color: #ff3700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Adjust the appearance when the button is hovered over */
+.search-button:hover {
+    background-color: #0056b3;
+}
+.logo img {
+    width: 120px;
+    margin-left: -310px;
+   
+}   
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: -70px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('travel1.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0;
+    color: #fff;
+    height: 520px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-align: left;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    margin-top: -50px;
+}
+#traventure{
+    font-size: 140px;
+    color: #1f2c8e;
+}
+.hero p {
+    font-size: 35px;
+    margin-top: -180px;
+    color: black;
+    margin-left: -1310px;
+    margin-top: -35px;
+}
+.hero a{
+    margin-left: -1310px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #FF5722;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+/* Add this CSS to your styles.css file or include it within a <style> element in your HTML file */
+
+/* Destinations Section Styling */
+.destinations {
+    background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+    padding: 60px 0;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Add a color transition animation */
+}
+
+.destinations h2:hover {
+    color: #FF5722; /* Change the text color on hover */
+}
+
+.destination-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add a scale transition animation */
+}
+
+.destination-card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.destination-card p {
+    font-size: 16px;
+}
+
+/* Packages Section Styling (Similar to Destinations) */
+.packages {
+    background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+    padding: 60px 0;
+    text-align: center;
+}
+
+.packages h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.packages h2:hover {
+    color: #FF5722;
+}
+
+.package-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+}
+
+.package-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.package-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.package-card p {
+    font-size: 16px;
+}
+.package-details {
+    display: none;
+}
+.package-highlights ul li{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 10px;
+}
+.see-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.see-more-link:hover {
+    background-color: #FFA000; /* Change color on hover */
+}
+.offers {
+    background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168)); /* Background color for the Offers section */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.offers h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.offers h2:hover {
+    color: #FF5722;
+}
+.offer-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.offer-card .discounted-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF5722; /* Color for the discounted price */
+    margin-top: 10px;
+    -right:100px ;
+}
+.offer-details ul li {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.star-offer {
+    background-color: #FF5722;
+    border: 1px solid #FF5722;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    position: relative;
+    display: inline-block;
+    
+  }
+  iframe{
+    width:300px;
+    height: 200px;
+  }
+  
+  .star p {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .see-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #FF5722;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+ 
+.testimonials {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+    background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Adjust the color as needed */
+}
+.testimonials h2:hover {
+    color: #FF5722;
+}
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+
+.testimonial-text {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: #f5f5f5;
+    text-align: left;
+    margin-left: 240px;
+}
+
+.testimonial-text p {
+    font-size: 18px;
+    color: #333; /* Adjust the color as needed */
+}
+
+.testimonial-author {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.testimonial-author img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-author p {
+    font-size: 16px;
+    color: #777; /* Adjust the color as needed */
+}
+.testimonial h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.testimonial p {
+    font-size: 16px;
+}
+.review-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.review-form .rating {
+    display: flex;
+    justify-content: center;
+}
+
+.review-form .rating label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.review-form .rating .fas.fa-star {
+    color: #FF5722;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.review-form .rating .fas.fa-star:active {
+    color: #333;
+}
+
+.review-form .rating input[type="radio"] {
+    display: none;
+}
+
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 100px;
+}
+
+.review-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.review-form button:hover {
+    background-color: #E64A19;
+}
+
+/* Additional Styling for Form Elements */
+.review-form input[type="radio"]:checked ~ .star-label,
+.review-form input[type="radio"]:hover ~ .star-label {
+    color: #0c0c0c; 
+    order: 2;/* Change the star color when checked or hovered */
+}
+.review-form textarea::placeholder {
+    color: #999;
+}
+/* Contact Section */
+.contact {
+    background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+    padding: 60px 0;
+    
+}
+
+.contact h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+.contact p {
+    font-size: 20px;
+    margin: 20px 0;
+    margin-left: 120px;
+}
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -260px;
+    
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 300px;
+}
+
+.contact textarea {
+    height: 120px; /* Adjust the height for the message input */
+}
+.rating {
+    text-align: center;
+    
+}
+
+.rating label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-left: 330px;
+}
+
+.star-label {
+    font-size: 30px;
+    color: #f5efef;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+.stars input[type="radio"] + .star-label {
+    order: 1;
+}
+
+.stars input[type="radio"]:checked ~ .star-label,
+.stars input[type="radio"]:hover ~ .star-label {
+    color: #FF5722; 
+    order: 2;/* Change the star color when checked or hovered */
+}
+.contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.contact button:hover {
+    background-color: #E64A19;
+}
+
+/* Additional Styling for Form Elements */
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+    border: 2px solid #FF5722;
+}
+
+.contact input[type="text"]::placeholder,
+.contact input[type="email"]::placeholder,
+.contact textarea::placeholder {
+    color: #999;
+}
+.contact .contact-item i {
+    font-size: 30px;
+    color: #FF5722;
+    padding-left: 30px;
+}
+.contact .contact-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.contact .contact-item a:hover {
+    color: #FF5722;
+}
+.social-proof {
+    background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+    padding: 60px 0;
+    text-align: center;
+}
+
+.social-proof h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #111010;
+}
+.social-proof h2:hover {
+    color: #FF5722;
+}
+.social-proof p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #111010;
+}
+
+.award {
+    display: inline-block;
+    margin: 20px;
+}
+
+.award img {
+    width: 300px;
+    height: auto;
+}
+
+.award p {
+    font-size: 18px;
+    color: #0c0c0c;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Adjust header padding for tablets and smartphones */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: flex; /* Add this to make the navigation links visible */
+        align-items: center; /* Center-align the navigation links */
+    }
+
+    .nav-links li {
+        margin-right: 0px; /* Remove horizontal spacing between list items */
+        margin-bottom: 10px;/* Add vertical spacing between list items */
+    }
+    
+    .fixed-nav {
+        background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+    }
+    
+    .logo img {
+        width: 100px; /* Adjust logo size for smaller screens */
+        margin-left: 0; /* Reset the margin for the logo */
+    }
+    
+    .search {
+        margin-right: 10px; /* Adjust the margin for the search input */
+    }
+    
+    .search input {
+        padding: 5px; /* Adjust the search input padding */
+        font-size: 9px; /* Adjust the font size for the search input */
+    }
+    .search i{
+        font-size: 9px;
+    }
+    
+    .search button {
+        padding: 5px 10px; /* Adjust the button padding */
+        font-size: 9px;
+        margin-right: 10px; /* Adjust the font size for the button */
+    }
+    .logo img {
+        width: 60px;
+        margin-left: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 20px;
+        padding-top: 190px;
+        padding-left:30px ; /* Adjust font size for tablets and smartphones */
+    }
+    #traventure{
+        font-size: 40px;
+        padding-top: 60px;
+        padding-left: 30px;
+        margin-top: -110px;
+    }
+    .cta-button{
+        margin-right:-1070px;
+        width: 70px;
+        height: 10px;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 23px;
+    }
+    .hero p {
+        font-size: 20px;
+        margin-left:-160px ;
+        margin-top: -50px;/* Adjust font size for tablets and smartphones */
+    }
+    .nav-links {
+        display: none;
+    }
+    .contact h2 {
+        font-size: 36px; /* Adjust the font size for the section title */
+        margin-left: 20px; /* Reset margin for the section title */
+    }
+
+    .contact p {
+        font-size: 16px; /* Adjust font size for paragraph text */
+        margin-left: 20px;
+        margin-right: 20px; /* Reset margin for paragraphs */
+    }
+    .contact form {
+        margin-top: 0; /* Reset margin-top for the form */
+        margin-left: 20px;
+        margin-right: 40px; /* Reset margin-left for the form */
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%; /* Make inputs and textarea full width */
+        margin-left: 0; /* Reset margin-left for inputs and textarea */
+    }
+    .stars{
+        margin-left: -19px;
+        margin-top: 10px;
+    }
+    .contact button {
+        width: 100%; /* Make the button full width */
+        margin-left: 20px;
+        margin-right: 70px; /* Reset margin-left for the button */
+    }
+    .testimonial-text {
+        margin-left: 0; /* Example: Reset the margin for testimonial text */
+    }
+    .testimonial-author {
+        margin: 0; /* Example: Reset the margin for testimonial author */
+    }
+    .testimonial-text p {
+        font-size: 16px; /* Example: Decrease font size for testimonial text */
+    }
+    .testimonial-author p {
+        font-size: 14px; /* Example: Decrease font size for testimonial author */
+    }
+    .review-form {
+        max-width: 100%; /* Make the form full width on smaller screens */
+        margin: 0; /* Remove margin */
+    }
+    .review-form .rating label {
+        font-size: 20px; /* Reduce the font size of rating labels */
+    }
+    .stars {
+        justify-content: center; /* Center-align the stars */
+    }
+}
+
+/* Media query for even smaller screens, e.g., smartphones */
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0; /* Example: Further reduce header padding */
+    }
+    .search {
+        margin-right: 10px; /* Example: Reduce search margin */
+    }
+    .search-button {
+        padding: 5px 10px; /* Example: Smaller search button */
+    }
+    .fixed-nav {
+        background:linear-gradient(rgb(244, 246, 247),rgb(59, 141, 168));
+    }
+
+    .search {
+        margin: 10px 0;
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    .search-button {
+        font-size: 14px;
+    }
+    .hero {
+        padding: 80px 0; /* Adjust padding for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .contact h2 {
+        font-size: 30px; /* Further reduce font size for the section title */
+    }
+
+    .contact p {
+        font-size: 14px; /* Further reduce font size for paragraph text */
+    }
+
+    .contact form {
+        margin-top: 0; /* Reset margin-top for the form */
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 14px; /* Reduce font size for inputs and textarea */
+    }
+    .testimonial-text {
+        margin-left: 0; /* Example: Reset the margin for testimonial text */
+    }
+    .testimonial-author {
+        margin: 0; /* Example: Reset the margin for testimonial author */
+    }
+    .testimonial-text p {
+        font-size: 14px; /* Example: Decrease font size for testimonial text */
+    }
+    .testimonial-author p {
+        font-size: 12px; /* Example: Decrease font size for testimonial author */
+    }
+    .review-form {
+        width:300px;
+        margin-left: 45px;
+        height: 210px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 10px; /* Example: Make the form full width */
+    }
+    .review-form textarea{
+        width:260px; 
+        font-size: 14px;    
+    }
+    .review-form button{
+        width: 150px;
+        font-size: 12px;
+        margin-left: 80px;
+        margin-top: -5px;
+    }
+    .review-form h3 {
+        font-size: 18px; /* Reduce the font size of the form header */
+    }
+    .review-form .rating label {
+        font-size: 16px; /* Further reduce the font size of rating labels */
+    }
+    .star-label {
+        font-size: 24px; /* Adjust the star label font size */
+    }
+    .contact button {
+        font-size: 14px; /* Reduce the font size of the button */
+    }
+    .stars {
+        margin-left: 0; /* Reset margin for stars container */
+    }
+    .stars input[type="radio"] + .star-label {
+        font-size: 20px; /* Adjust the star label font size */
+    }
+    .review-form input[type="radio"] + .star-label {
+        font-size: 20px; /* Adjust the star label font size */
+    }
+}
